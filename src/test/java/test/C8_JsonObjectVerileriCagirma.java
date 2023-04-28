@@ -29,16 +29,20 @@ public class C8_JsonObjectVerileriCagirma {
         JSONObject cepTel=new JSONObject();
         cepTel.put("number","532-555 55 55");
         cepTel.put("type","cep" );
+
         JSONObject evTel=new JSONObject();
         evTel.put("number","0312-123 4567");
         evTel.put("type","ev ");
+
         JSONArray phoneNumbers=new JSONArray();
         phoneNumbers.put(cepTel);
         phoneNumbers.put(evTel);
+
         JSONObject address=new JSONObject();
         address.put("streetAddress","Kurtulus cad.");
         address.put("city","Ankara");
         address.put( "postalCode","06100");
+
         JSONObject kisiBilgisi=new JSONObject();
         kisiBilgisi.put("firstName","Ahmet");
         kisiBilgisi.put("lastName","Bulut");

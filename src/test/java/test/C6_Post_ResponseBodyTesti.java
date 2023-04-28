@@ -36,7 +36,7 @@ test edin.
         reqBody.put("title","API");
         reqBody.put("body","API ogrenmek ne guzel");
         reqBody.put("userId",10);
-
+//reqBody = {"title":"API","body":"API ogrenmek ne guzel","userId":10}
         System.out.println("reqBody = " + reqBody);
 
         //2- Eger soruda bize verilmisse expected data hazirla
@@ -47,6 +47,12 @@ test edin.
                                  .body(reqBody.toString())
                                  .post(url);
         response.prettyPrint();
+        //{
+        //    "title": "API",
+        //    "body": "API ogrenmek ne guzel",
+        //    "userId": 10,
+        //    "id": 101
+        //}
 
         //4- Assertion
 

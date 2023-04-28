@@ -28,6 +28,12 @@ oldugunu test edin.
 
         Response response=given().when().get(url);
         response.prettyPrint();
+        //{
+        //    "userId": 5,
+        //    "id": 44,
+        //    "title": "optio dolor molestias sit",
+        //    "body": "temporibus est consectetur dolore\net libero debitis vel velit laboriosam quia\nipsum quibusdam qui itaque fuga rem aut\nea et iure quam sed maxime ut distinctio quae"
+        //}
         //4-Assertion
 
         response
