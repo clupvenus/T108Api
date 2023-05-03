@@ -7,9 +7,8 @@ import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.json.JSONObject;
-import org.junit.Assert;
 import org.junit.Test;
-import testData.TestDataHerokuappPost;
+import testData.TestDataHerokuapp;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
@@ -51,7 +50,7 @@ public class C21_Post_TestDataKullanimi extends HerOkuBaseUrl {
     public void post01(){
         //url ve request body hazirla
         specHerOku.pathParam("pp1","booking");
-        TestDataHerokuappPost testDataHerokuApp=new TestDataHerokuappPost();
+        TestDataHerokuapp testDataHerokuApp=new TestDataHerokuapp();
         JSONObject reqBody = testDataHerokuApp.reqdBodyOlusturJson();
 
         //Expected Data Hazirla
